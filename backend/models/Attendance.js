@@ -1,29 +1,4 @@
-// const mongoose = require('mongoose');
-
-// const attendanceSchema = new mongoose.Schema({
-//   studentId: {
-//     type: mongoose.Schema.Types.ObjectId,
-//     ref: 'Member',
-//     required: true
-//   },
-//   eventId: {
-//     type: mongoose.Schema.Types.ObjectId,
-//     ref: 'Event',
-//     required: true
-//   },
-//   status: {
-//     type: String,
-//     enum: ['present', 'absent'],
-//     default: 'absent'
-//   },
-//   timestamp: {
-//     type: Date,
-//     default: Date.now
-//   }
-// });
-
-// module.exports = mongoose.model('Attendance', attendanceSchema);
-
+//Attendance.js
 const mongoose = require('mongoose');
 
 const attendanceSchema = new mongoose.Schema({

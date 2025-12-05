@@ -1,5 +1,6 @@
+//components/StudentMonitoring.jsx
 import React, { useEffect, useState } from 'react';
-import { fetchFrequentAbsentees } from '../services/monitoringService';
+import { fetchFrequentAbsentees } from "../services/monitoringServices.js";
 import { Badge, Spinner } from 'react-bootstrap';
 
 const StudentMonitoring = () => {

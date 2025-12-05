@@ -8,7 +8,7 @@ export const fetchBuses = async () => {
 };
 
 export const addBus = async (busData) => {
-  const res = await axios.post(`${API_URL}/add`, busData);
+  const res = await axios.post(API_URL, busData);
   return res.data;
 };
 

@@ -1,7 +1,6 @@
-// geoattendanceService.js
 const API_BASE_URL = "http://localhost:5000/api";
 
-export const markAttendance = async (studentId, latitude, longitude, attendance) => {
+export const markAttendance = async (studentId, eventId, userLat, userLng, eventLat, eventLng) => {
   try {
     const response = await fetch(`${API_BASE_URL}/attendance/mark`, {
       method: "POST",
@@ -10,14 +9,15 @@ export const markAttendance = async (studentId, latitude, longitude, attendance)
       },
       body: JSON.stringify({
         studentId,
-        latitude,
-        longitude,
-        attendance,
+        eventId,
+        userLat,
+        userLng,
+        eventLat,
+        eventLng,
       }),
     });
 
-    const data = await response.json();
-    return data;
+    return response.json();
   } catch (error) {
     console.error("❌ Error in markAttendance:", error);
     throw error;
