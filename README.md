@@ -293,11 +293,7 @@ GET /api/monitoring
 
 
 
-This project is developed as:
-
-
-
-Academic Year Project. Its Real-world scalable club management solution.
+This project is developed as an Academic Year Project and aims to provide a scalable, real-world solution for efficiently managing college club activities, events, attendance, announcements, and member coordination through a centralized platform.
 
 
 
